@@ -1,0 +1,16 @@
+/.bundle
+/vendor
+/.DS_Store
+/.byebug_history
+/.coverage
+/coverage/
+/pkg/
+/tmp/
+/*.gem
+/.yardoc
+/.yardopts
+/log/
+/spec/reports/
+/.ruby-version
+/Gemfile.lock
+/.idea
