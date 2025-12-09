@@ -7,7 +7,7 @@ module KlevuSdk
         class RubyVersionProvider
 
           def execute
-            RUBY_VERSION
+            'Ruby %s' % [RUBY_VERSION]
           end
         end
       end

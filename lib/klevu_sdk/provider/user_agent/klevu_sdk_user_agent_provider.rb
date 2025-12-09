@@ -9,6 +9,8 @@ module KlevuSdk
         def initialize(
           system_information_providers: []
         )
+          system_information_providers << System::RubyVersionProvider.new
+
           @system_information_providers = system_information_providers
         end
 
