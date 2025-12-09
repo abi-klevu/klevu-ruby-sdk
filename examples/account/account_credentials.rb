@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# Ensure the lib path is correct relative to this example file
 require_relative "../../lib/klevu_sdk"
 
 # Replace these with your actual Klevu keys
@@ -26,11 +25,8 @@ begin
 
 rescue => e
   puts "Credentials are NOT valid"
-
-  # Print full error message
   puts "Error: #{e.message}"
 
-  # If the exception stores multiple validation errors
   if e.respond_to?(:errors)
     puts "Details:"
     e.errors.each { |err| puts " - #{err}" }
